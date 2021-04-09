@@ -1,28 +1,74 @@
+@font-face
+{
+    font-family: 'Police-logo-titres';
+    src:url('police/police-shrikhand.ttf');
+}
+@font-face
+{
+    font-family: 'Police-principale';
+    src:url('police/Roboto-Light.ttf');
+}
+@font-face
+{
+    font-family: 'Police-principale-bold';
+    src: url('police/Roboto-Bold.ttf');
+}
+
+
 header , main
 {
     width: 1240px;
     margin: auto;
 }
+/* POLICE */ 
+body
+{
+    font-family: 'Police-principale';
+}
+.introduction__title--bold  , .nav  , .container-restaurants
+{
+    font-family: 'Police-principale-bold'
+}
+
+p
+{
+    font-family: 'Police-principale'
+}
+/* couleurs */
+.icon-nav , .icon-localisation , .icon-restaurants
+{
+    color: gray
+}
+/* PAGES */ 
 
 .logo , .localisation
 {
     display: flex;
     justify-content: center;
-    background-color: grey;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
+
+    .icon-localisation
+    {
+        padding-right: 15px;
+        display: flex;
+    }
 }
 .introduction-and-nav
 {
     display: flex;
     justify-content: space-around;
-    padding: 30px
+    padding: 30px;
+    width: 100%;
+    background-color: #F2F2F2;
 }
 .introduction
 {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    
 
     .introduction__title{
         font-size: 20px;
@@ -32,6 +78,9 @@ header , main
         border-radius: 25px;
         width: fit-content;
         padding: 10px;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
     }
 }
 
@@ -53,7 +102,6 @@ header , main
     }
     .icon-nav{
         padding-right: 5px;
-        color: purple;
         border-radius: 50%;
         height: 30px;
         width: 30px;
@@ -67,16 +115,20 @@ header , main
     }
    
 }
-.restaurants
+.container-restaurants
 {
+    padding-top: 50px; 
+
+    .restaurants{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around; 
+}
 
     .restaurants__title{
         font-size: 20px;
-        margin: 25px;
-        margin-left: 20px;
+        padding-left: 50px;
     }
     .restaurants__card{
         background-color: white;
@@ -90,6 +142,16 @@ header , main
         font-size: 13px;
         border: 1px solid black;
         margin: 20px;
+    
+    p , h3 , .icon-restaurants{
+        padding-left: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 22px;
+    }
 }
     
     .restaurants__card__img{
@@ -105,19 +167,38 @@ header , main
 
 footer{
 
-    background-color: #F2F2F2;
-    width: 100%;
+    display: flex;
+    background-color: #696969;
+    width: auto;
+    color: white;
     
 }
 
 .container-footer
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    margin: auto;
+    width: auto;
 
-h3 , p
-{
-    padding-left: 20px;
+    .container-footer__title
+    {
+        font-family: 'Police-logo-titres';
+        align-self: center;
+        margin-right: 250px;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin-right: 250px;
+    }
+    ul a{
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    
+    }
 }
