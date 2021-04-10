@@ -10,8 +10,13 @@
   font-family: "Police-principale-bold";
   src: url("police/Roboto-Bold.ttf");
 }
-header, main {
-  width: 1240px;
+header {
+  width: auto;
+  margin: auto;
+}
+
+main {
+  width: 70%;
   margin: auto;
 }
 
@@ -33,7 +38,7 @@ p {
   color: gray;
 }
 
-/* PAGES */
+/* ACCUEIL */
 .logo, .localisation {
   display: flex;
   justify-content: center;
@@ -47,8 +52,9 @@ p {
 
 .introduction-and-nav {
   display: flex;
-  justify-content: space-around;
-  padding: 30px;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   background-color: #F2F2F2;
 }
@@ -109,6 +115,7 @@ p {
 
 .container-restaurants {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .container-restaurants .restaurants {
   display: flex;
@@ -152,28 +159,44 @@ p {
 
 footer {
   display: flex;
+  justify-content: space-around;
+  list-style-type: none;
   background-color: #696969;
   width: auto;
-  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 250px;
+}
+
+footer li {
+  margin: 10px;
+}
+
+footer a {
+  font-size: 15px;
+  color: black;
+  padding-bottom: 3px;
+  text-decoration: none;
 }
 
 .container-footer {
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 22px;
   margin: auto;
   width: auto;
 }
 .container-footer .container-footer__title {
   font-family: "Police-logo-titres";
   align-self: center;
-  margin-right: 250px;
 }
 .container-footer ul {
   list-style-type: none;
   padding: 0;
-  margin-right: 250px;
 }
 .container-footer ul a {
   list-style-type: none;
