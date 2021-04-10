@@ -1,15 +1,11 @@
-@font-face {
-  font-family: "Police-logo-titres";
-  src: url("police/police-shrikhand.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }
-@font-face {
-  font-family: "Police-principale";
-  src: url("police/Roboto-Light.ttf");
-}
-@font-face {
-  font-family: "Police-principale-bold";
-  src: url("police/Roboto-Bold.ttf");
-}
+
 header {
   width: auto;
   margin: auto;
@@ -20,17 +16,16 @@ main {
   margin: auto;
 }
 
-/* POLICE */
-body {
-  font-family: "Police-principale";
+footer {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #696969;
+  width: auto;
 }
 
 .introduction__title--bold, .nav, .container-restaurants {
-  font-family: "Police-principale-bold";
-}
-
-p {
-  font-family: "Police-principale";
+  font-weight: 550;
 }
 
 /* couleurs */
@@ -38,11 +33,12 @@ p {
   color: gray;
 }
 
-/* ACCUEIL */
+/* PAGE D'ACCUEIL */
 .logo, .localisation {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
 }
 .logo .icon-localisation, .localisation .icon-localisation {
@@ -65,10 +61,10 @@ p {
   flex-direction: column;
   padding: 10px;
 }
-.introduction .introduction__title {
+.introduction__title {
   font-size: 17px;
 }
-.introduction .introduction__btn {
+.introduction__btn {
   border-radius: 25px;
   width: fit-content;
   padding: 10px;
@@ -77,17 +73,17 @@ p {
   color: black;
   box-shadow: 0 3px 10px -3px #7e7e7e;
 }
-.introduction .introduction__title--bold {
+.introduction__title-bold {
   font-size: 25px;
 }
 
 .nav {
   align-self: flex-end;
 }
-.nav .nav__title {
+.nav__title {
   font-size: 20px;
 }
-.nav .nav__link {
+.nav__link {
   display: flex;
   margin: 10px;
   padding: 15px;
@@ -99,7 +95,7 @@ p {
   align-items: center;
   box-shadow: 0 3px 10px -3px #7e7e7e;
 }
-.nav .icon-nav {
+.nav__icon {
   padding-right: 5px;
   border-radius: 50%;
   height: 30px;
@@ -108,7 +104,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.nav .nav__btn {
+.nav__btn {
   padding-left: 10px;
   padding-right: 15px;
 }
@@ -117,17 +113,18 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.container-restaurants .restaurants {
+.container-restaurants__title {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.restaurants {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.container-restaurants .restaurants__title {
-  font-size: 20px;
-  padding-left: 50px;
-}
-.container-restaurants .restaurants__card {
+.restaurants__card {
   background-color: white;
   width: 500px;
   height: 300px;
@@ -140,16 +137,16 @@ p {
   margin: 20px;
   box-shadow: 0 3px 10px -3px #7e7e7e;
 }
-.container-restaurants .restaurants__card p, .container-restaurants .restaurants__card h3, .container-restaurants .restaurants__card .icon-restaurants {
+.restaurants__card p, .restaurants__card h3, .restaurants__card .icon-restaurants {
   padding-left: 20px;
 }
-.container-restaurants .restaurants__card p {
+.restaurants__card p {
   font-size: 15px;
 }
-.container-restaurants .restaurants__card h3 {
+.restaurants__card h3 {
   font-size: 22px;
 }
-.container-restaurants .restaurants__card__img {
+.restaurants__card-img {
   width: 100%;
   height: 60%;
   background-position: center center;
@@ -157,18 +154,9 @@ p {
   border-radius: 15px 15px 0 0;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  background-color: #696969;
-  width: auto;
-}
-
 footer ul {
   list-style-type: none;
   padding: 0;
-  margin-right: 250px;
 }
 
 footer li {
@@ -184,14 +172,14 @@ footer a {
 
 .container-footer {
   display: flex;
+  justify-content: space-around;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 22px;
-  margin: auto;
-  width: auto;
+  width: 70%;
 }
-.container-footer .container-footer__title {
-  font-family: "Police-logo-titres";
+.container-footer__title {
+  font-family: "Shrikhand", cursive;
   align-self: center;
 }
 .container-footer ul {
@@ -203,5 +191,58 @@ footer a {
   text-decoration: none;
   color: white;
 }
+
+@media all and (max-width: 745px) {
+  .logo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .localisation {
+    background-color: #80808045;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .introduction-and-nav {
+    flex-direction: column;
+    background-color: white;
+    padding: unset;
+  }
+
+  .introduction {
+    background-color: #F2F2F2;
+    text-align: center;
+    align-items: center;
+    padding: 45px;
+  }
+
+  .introduction__title-bold {
+    width: 75%;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .introduction__title {
+    width: 90%;
+    padding-bottom: 35px;
+  }
+
+  .nav {
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 90%;
+  }
+
+  .container-restaurants {
+    background-color: #F2F2F2;
+  }
+
+  .container-footer {
+    flex-direction: column;
+  }
+}
+/* MENU 1 */
 
 /*# sourceMappingURL=style.css.map */
