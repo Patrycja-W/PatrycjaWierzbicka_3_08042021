@@ -19,7 +19,7 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    background-color: #696969;
+    background-color: #353535;
     width: auto;
 }
 
@@ -28,7 +28,7 @@ footer {
 }
 
 /* couleurs */
-.icon-nav , .icon-localisation , .icon-restaurants
+.icon-nav , .icon-localisation , .icon-restaurants , .nav__icon 
 {
     color: gray
 }
@@ -72,14 +72,16 @@ footer {
         &__btn{
             border-radius: 25px;
             width: fit-content;
-            padding: 10px;
+            padding: 15px;
             list-style-type: none;
             text-decoration: none;
-            color: black;
+            color: white;
             box-shadow: 0 3px 10px -3px #7e7e7e;
+            background-image: linear-gradient(170deg, #ff79da, #9356dc);
         }
             &__title-bold{
                 font-size: 25px;
+                font-weight: bold;
             }
 }
 .nav
@@ -88,11 +90,13 @@ footer {
 
     &__title{
         font-size: 20px;
+        font-weight: bold;
     }
         &__link{
             display: flex;
             margin: 10px;
-            padding: 15px;
+            padding: 18px;
+            padding-left: 0;
             border-radius: 20px;
             list-style-type: none;
             text-decoration: none;
@@ -101,6 +105,24 @@ footer {
             align-items: center;
             box-shadow: 0 3px 10px -3px #7e7e7e;
         }
+
+        &__number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -11px;
+            border-radius: 100%;
+            background-color: #9356dc;
+            height: 25px;
+            width: 25px;
+            color: white;
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        
+        
             &__icon{
                 padding-right: 5px;
                 border-radius: 50%;
@@ -113,11 +135,15 @@ footer {
                 &__btn{
                     padding-left: 10px;
                     padding-right: 15px;
+                    font-size: 15px;
+                    font-weight: bold;
                 }
    
 }
-
-
+.nav__link:hover{
+    background-color: #9356DC;
+    
+ }
 .container-restaurants
 {
     padding-top: 50px; 
@@ -162,6 +188,7 @@ footer {
             margin-right: 25px;
             margin-bottom: 10px;
             font-size: x-large;
+            
         }
         p{
             font-size: 15px;
@@ -184,7 +211,6 @@ footer {
     }
 
 }
-
 
 
 
@@ -264,7 +290,6 @@ footer a
     .introduction__title-bold{
         width: 75%;
         padding-bottom: 15px;
-        font-weight: bold;
     }
     .introduction__title{
         width: 90%;
@@ -403,10 +428,12 @@ footer a
 
     &-commander{
         border-radius: 20px;
-        border: black 1px solid;
+        box-shadow: 0 1px 10px -3px #7e7e7e;
         padding: 15px;
         text-align: center;
         width: 15%;
+        background-image: linear-gradient(170deg, #ff79da, #9356dc);
+        color:white;
     }
 }
 
