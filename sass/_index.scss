@@ -94,7 +94,7 @@ footer {
     }
         &__link{
             display: flex;
-            margin: 10px;
+            margin: 20px;
             padding: 18px;
             padding-left: 0;
             border-radius: 20px;
@@ -104,6 +104,7 @@ footer {
             width: auto;
             align-items: center;
             box-shadow: 0 3px 10px -3px #7e7e7e;
+            background-color: white;
         }
 
         &__number{
@@ -141,8 +142,7 @@ footer {
    
 }
 .nav__link:hover{
-    background-color: #9356DC;
-    
+    background-color: lighten($color: #9356DC, $amount: 30)
  }
 .container-restaurants
 {
@@ -151,7 +151,7 @@ footer {
 
     &__title{
         font-size: 22px;
-        padding-left: 50px;
+        padding-left: 20px;
         font-weight: bold;
     }
     
@@ -211,7 +211,6 @@ footer {
     }
 
 }
-
 
 
 
@@ -285,7 +284,7 @@ footer a
         background-color: #F2F2F2;
         text-align: center;
         align-items: center;
-        padding: 40px;
+        padding: 30px;
     }
     .introduction__title-bold{
         width: 75%;
@@ -299,7 +298,11 @@ footer a
         align-self: center;
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 90%;
+        width: 90%; 
+
+        &__link{
+            background-color: #F2F2F2;
+        }
     }
     .container-restaurants{
       background-color: #F2F2F2;
@@ -357,6 +360,9 @@ footer a
     .nav__title-content{
         display: flex
     }
+    .nav__link{
+       background-color: #F2F2F2;
+    }
     .container-restaurants {
         padding-top: 0;
 }
@@ -366,9 +372,14 @@ footer a
 
 
 /* Menu 1 */
-
+ hr{
+    height: 3px;
+    width: 15%;
+    background-color: #99E2D0;
+    border: none;
+ }
 .title{
-    padding-left: 30px;
+    padding-left: 15px;
     border-bottom: 1px black solid;
 
 }
@@ -440,6 +451,10 @@ footer a
 
 @media all and (max-width: 640px){
     
+    .logo__retour-accueil{
+        align-self: center;
+        font-size: 20px;
+    }
         .menu_img{
             background-color: white;
             width: auto;
@@ -456,18 +471,26 @@ footer a
         .main-menu{
             background-color: #F2F2F2;
             border-radius: 40px 40px 0 0;
+            margin-top: -38px;
         }
         .title{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 77%;
-            padding-left: 25px;
-            height: 61px;
+            width: 85%;
             border: none;
+            padding-top: 25px;
         }
+        hr{
+            height: 3px;
+            width: 11%;
+            background-color: #99E2D0;
+            border: none;
+            margin:0;
+         }
         .cards{
             display: block;
+            padding-top: 0;
         }
         
         .card{
@@ -503,3 +526,5 @@ footer a
     
 }
 
+
+ 
