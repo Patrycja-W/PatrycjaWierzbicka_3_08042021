@@ -134,6 +134,10 @@ footer {
   background-color: #e4d5f6;
 }
 
+.nav__link:hover i {
+  color: #9356DC;
+}
+
 .container-restaurants {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -184,11 +188,23 @@ footer {
   margin-bottom: 0;
 }
 .restaurants__card-img {
+  position: relative;
   width: 100%;
   height: 67%;
   background-position: center center;
   background-size: cover;
   border-radius: 15px 15px 0 0;
+}
+
+.restaurant__card-img--new {
+  position: absolute;
+  background-color: #99e2d0;
+  right: 10px;
+  top: 10px;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #197d65;
 }
 
 footer ul {
@@ -244,6 +260,7 @@ footer a {
     background-color: #80808045;
     padding-top: 15px;
     padding-bottom: 15px;
+    box-shadow: 0em 0 0.3em #808080;
   }
 
   .introduction-and-nav {
@@ -281,6 +298,10 @@ footer a {
 
   .container-restaurants {
     background-color: #F2F2F2;
+  }
+
+  .restaurants__card {
+    height: 240px;
   }
 
   footer {
@@ -350,6 +371,11 @@ footer a {
   }
 }
 /* Menu 1 */
+.logo__retour-accueil {
+  color: black;
+  align-self: center;
+}
+
 hr {
   height: 3px;
   width: 15%;
@@ -374,8 +400,10 @@ hr {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 30px;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .card__title {
@@ -394,15 +422,16 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+.card__menu-content-price {
+  font-size: 15px;
+  padding-right: 10px;
+}
 .card__menu-content h3 {
   margin: 0;
   margin-bottom: 5px;
   font-size: 17px;
 }
 .card__menu-content a {
-  font-size: 15px;
-}
-.card__menu-content .price {
   font-size: 15px;
 }
 
@@ -412,12 +441,12 @@ hr {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.btn-commander {
-  border-radius: 20px;
+.btn__commander {
+  border-radius: 30px;
   box-shadow: 0 1px 10px -3px #7e7e7e;
-  padding: 15px;
+  padding: 15px 50px;
   text-align: center;
-  width: 15%;
+  width: auto;
   background-image: linear-gradient(170deg, #ff79da, #9356dc);
   color: white;
 }
@@ -446,6 +475,10 @@ hr {
     margin-top: -38px;
   }
 
+  .title__icon {
+    margin-left: 0;
+  }
+
   .title {
     display: flex;
     justify-content: space-between;
@@ -466,6 +499,8 @@ hr {
   .cards {
     display: block;
     padding-top: 0;
+    width: 100%;
+    margin-left: 0;
   }
 
   .card {
@@ -474,17 +509,17 @@ hr {
   }
   .card__title {
     text-align-last: auto;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .card .card__menu-content {
     background-color: white;
+    margin: 16px;
   }
 
   .btn {
     margin: 0;
   }
   .btn-commander {
-    width: 35%;
     margin-bottom: 60px;
   }
 }
