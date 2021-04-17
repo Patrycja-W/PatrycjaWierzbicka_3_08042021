@@ -24,10 +24,6 @@ footer {
   width: auto;
 }
 
-.introduction__title--bold, .nav, .container-restaurants {
-  font-weight: 550;
-}
-
 /* couleurs */
 .icon-nav, .icon-localisation, .icon-restaurants, .nav__icon {
   color: gray;
@@ -518,7 +514,7 @@ hr {
 
   .btn {
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 
