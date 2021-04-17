@@ -518,9 +518,7 @@ hr {
 
   .btn {
     margin: 0;
-  }
-  .btn__commander {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
