@@ -140,8 +140,9 @@ footer {
 }
 .container-restaurants__title {
   font-size: 22px;
-  padding-left: 20px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 .restaurants {
@@ -296,6 +297,11 @@ footer a {
     background-color: #F2F2F2;
   }
 
+  .container-restaurants__title {
+    justify-content: start;
+    padding-left: 20px;
+  }
+
   .restaurants__card {
     height: 240px;
   }
@@ -397,6 +403,8 @@ hr {
 .title {
   padding-left: 15px;
   border-bottom: 1px black solid;
+  display: flex;
+  justify-content: center;
 }
 
 .title a {
