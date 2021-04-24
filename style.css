@@ -436,6 +436,7 @@ hr {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  animation: apparition 0.5s;
 }
 .card__menu-content-phrase {
   display: flex;
@@ -538,6 +539,16 @@ hr {
     margin: 0;
     padding-bottom: 70px;
     padding-top: 50px;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

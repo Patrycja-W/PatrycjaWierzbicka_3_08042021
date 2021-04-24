@@ -3,6 +3,16 @@ $color-violet : #9356DC;
 $color-rose:#FF79DA;
 $color-vert: #99E2D0;
   
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
   
 
     
