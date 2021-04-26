@@ -454,7 +454,6 @@ footer a
     &__menu-content{
         box-shadow: 0 1px 10px -3px #7e7e7e;
         margin: 10px;
-        padding: 10px;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
@@ -476,9 +475,13 @@ footer a
             margin: 0;
             margin-bottom: 5px;
             font-size: 17px;
+            padding-left: 10px;
+            padding-top: 10px;
         }
         a{
             font-size: 15px;
+            padding-left: 10px;
+            padding-bottom: 10px;
         }
     }
 }
