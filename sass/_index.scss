@@ -447,7 +447,6 @@ footer a
 }
 .card{
     
-    
     &__title{
         text-align-last: center;
         font-size: 18px;
@@ -459,7 +458,9 @@ footer a
         display: flex;
         flex-direction: column;
         border-radius: 10px;
-        animation: apparition 0.5s;
+        position: relative;
+        
+    
 
         &-phrase{
             display: flex;
@@ -571,6 +572,3 @@ footer a
             padding-top: 50px;
             }
 }
-
-
- 
