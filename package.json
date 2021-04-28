@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 Patrycja",
+  "main": "index.js",
+  "scripts": {
+    "sass": 
+    "prefix" 
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrycja-W/PatrycjaWierzbicka_3_08042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patrycja-W/PatrycjaWierzbicka_3_08042021/issues"
+  },
+  "homepage": "https://github.com/Patrycja-W/PatrycjaWierzbicka_3_08042021#readme"
+}
