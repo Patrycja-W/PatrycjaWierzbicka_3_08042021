@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import 'variables';
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -21,14 +21,14 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    background-color: #353535;
+    background-color: $color-footer;
     width: auto;
 }
 
 /* couleurs */
 .icon-nav , .icon-localisation , .icon-restaurants , .nav__icon 
 {
-    color: gray
+    color: $color-icons;
 }
 
 /* PAGE D'ACCUEIL */ 
@@ -75,7 +75,7 @@ footer {
             text-decoration: none;
             color: white;
             box-shadow: 0 3px 10px -3px #7e7e7e;
-            background-image: linear-gradient(170deg, #ff79da, #9356dc);
+            background-image: linear-gradient(170deg, $color-secondary, $color-primary);
         }
             &__title-bold{
                 font-size: 25px;
@@ -112,7 +112,7 @@ footer {
             position: relative;
             left: -11px;
             border-radius: 100%;
-            background-color: #9356dc;
+            background-color: $color-primary ;
             height: 25px;
             width: 25px;
             color: white;
@@ -140,11 +140,11 @@ footer {
    
 }
 .nav__link:hover{
-    background-color: lighten($color: #9356DC, $amount: 30);
+    background-color: lighten($color: $color-primary , $amount: 30);
     box-shadow: 0 5px 10px -3px #7e7e7e;
  }
  .nav__link:hover i {
-     color: #9356DC;
+     color: $color-primary ;
  }
 .container-restaurants
 {
@@ -219,7 +219,7 @@ footer {
 }
 .restaurant__card-img--new{
     position: absolute;
-    background-color: #99e2d0;
+    background-color: $color-tertiary;
     right: 10px;
     top: 10px;
     font-size: 15px;
@@ -419,7 +419,7 @@ footer a
  hr{
     height: 3px;
     width: 15%;
-    background-color: #99E2D0;
+    background-color: $color-tertiary;
     border: none;
  }
 .title{
@@ -499,7 +499,7 @@ footer a
         padding: 15px 50px;
         text-align: center;
         width: auto;
-        background-image: linear-gradient(170deg, #ff79da, #9356dc);
+        background-image: linear-gradient(170deg,$color-secondary, $color-primary);
         color:white;
     }
 }
@@ -543,7 +543,7 @@ footer a
         hr{
             height: 3px;
             width: 11%;
-            background-color: #99E2D0;
+            background-color: $color-tertiary;
             border: none;
             margin:0;
          }
