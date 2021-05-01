@@ -3,27 +3,13 @@
 .introduction__btn:hover {
     box-shadow: 0 7px 10px -3px #7e7e7e;
     background-image: linear-gradient(170deg, #ee81cf, #a469ec);
+  }
+    .btn__commander:hover {
+  box-shadow: 0 7px 10px -3px #7e7e7e;
+  background-image: linear-gradient(170deg, #ee81cf, #a469ec);
+
 }
 /* Animation apparition des menus*/ 
-
-@keyframes apparition {
-    0%{
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    40%{
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    60%{
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 .card__menu-content:nth-child(1){
   animation: apparition 1s linear backwards;
@@ -38,6 +24,26 @@
   animation: apparition 1s 0.9s linear backwards;
 }
 
+@keyframes apparition {
+  0%{
+      opacity: 0;
+      transform: translateY(25px);
+  }
+  40%{
+      opacity: 0;
+      transform: translateY(25px);
+  }
+  60%{
+      opacity: 0;
+      transform: translateY(25px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
 /* Animation Loader */
 
 .loading{
@@ -50,26 +56,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    -webkit-animation: fade-out 3s ease-out both;
-	        animation: fade-out 3s ease-out both;
+    -webkit-animation: loaderPage 3s ease-out both;
+	        animation: loaderPage 3s ease-out both;
 }
 
-@keyframes fade-out{
+@keyframes loaderPage{
   0% {
     opacity: 1;
   }
   100% {
-    opacity: 0,5;
+    opacity: 1;
     visibility: hidden;
   }
 }
 
 .loader{
     color: white;
-    animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: titleLoader 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes focus-in-expand-fwd {
+@keyframes titleLoader {
     0% {
         letter-spacing: -0.5em;
         transform: translateZ(-800px);
@@ -90,9 +96,9 @@
     text-align: center;
     font-size: 50px;
     color: wheat;
-    animation: rotate-out-ver 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+    animation: rotationSpinner 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
   }
-  @keyframes rotate-out-ver {
+  @keyframes rotationSpinner {
     0% {
       transform: rotateY(360deg);
       opacity: 1;
@@ -105,14 +111,7 @@
     }
   }
   
-  
-  @keyframes sk-stretchdelay {
-    0%, 40%, 100% { 
-      transform: scaleY(0.4);
-    }  20% { 
-      transform: scaleY(1.0);
-    }
-  }
+
 /* Animation heart */
 .icon-restaurants i {
     transition: all 200ms;
@@ -123,6 +122,7 @@
     background: radial-gradient(circle,rgba(147, 86, 220, 1) 0%,rgba(255, 121, 218, 1) 100%);
     transition: all 500ms;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
@@ -134,6 +134,7 @@
     background: radial-gradient(circle,rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
     transition: all 500ms;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s linear 0s;
  }

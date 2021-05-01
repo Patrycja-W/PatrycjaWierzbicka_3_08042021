@@ -61,14 +61,14 @@ footer {
   font-size: 17px;
 }
 .introduction__btn {
-  border-radius: 25px;
-  width: max-content;
-  padding: 15px;
-  list-style-type: none;
+  border-radius: 30px;
   text-decoration: none;
-  color: white;
-  box-shadow: 0 3px 10px -3px #7e7e7e;
+  box-shadow: 0 1px 10px -3px #7e7e7e;
+  padding: 15px 50px;
+  text-align: center;
+  width: max-content;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
 }
 .introduction__title-bold {
   font-size: 25px;
@@ -216,7 +216,7 @@ footer li {
 
 footer a {
   font-size: 15px;
-  color: black;
+  color: #353535;
   padding-bottom: 3px;
   text-decoration: none;
 }
@@ -244,7 +244,7 @@ footer a {
   color: white;
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 700px) {
   main {
     width: auto;
   }
@@ -418,6 +418,10 @@ hr {
   margin-left: 30px;
 }
 
+.title__icon i {
+  color: black;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -467,10 +471,11 @@ hr {
 }
 .btn__commander {
   border-radius: 30px;
+  text-decoration: none;
   box-shadow: 0 1px 10px -3px #7e7e7e;
   padding: 15px 50px;
   text-align: center;
-  width: auto;
+  width: max-content;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   color: white;
 }
@@ -551,7 +556,28 @@ hr {
   background-image: linear-gradient(170deg, #ee81cf, #a469ec);
 }
 
+.btn__commander:hover {
+  box-shadow: 0 7px 10px -3px #7e7e7e;
+  background-image: linear-gradient(170deg, #ee81cf, #a469ec);
+}
+
 /* Animation apparition des menus*/
+.card__menu-content:nth-child(1) {
+  animation: apparition 1s linear backwards;
+}
+
+.card__menu-content:nth-child(2) {
+  animation: apparition 1s 0.3s linear backwards;
+}
+
+.card__menu-content:nth-child(3) {
+  animation: apparition 1s 0.6s linear backwards;
+}
+
+.card__menu-content:nth-child(4) {
+  animation: apparition 1s 0.9s linear backwards;
+}
+
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -570,22 +596,6 @@ hr {
     transform: translateY(0px);
   }
 }
-.card__menu-content:nth-child(1) {
-  animation: apparition 1s linear backwards;
-}
-
-.card__menu-content:nth-child(2) {
-  animation: apparition 1s 0.3s linear backwards;
-}
-
-.card__menu-content:nth-child(3) {
-  animation: apparition 1s 0.6s linear backwards;
-}
-
-.card__menu-content:nth-child(4) {
-  animation: apparition 1s 0.9s linear backwards;
-}
-
 /* Animation Loader */
 .loading {
   width: 100%;
@@ -597,25 +607,25 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-animation: fade-out 3s ease-out both;
-  animation: fade-out 3s ease-out both;
+  -webkit-animation: loaderPage 3s ease-out both;
+  animation: loaderPage 3s ease-out both;
 }
 
-@keyframes fade-out {
+@keyframes loaderPage {
   0% {
     opacity: 1;
   }
   100% {
-    opacity: 0, 5;
+    opacity: 1;
     visibility: hidden;
   }
 }
 .loader {
   color: white;
-  animation: focus-in-expand-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: titleLoader 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes focus-in-expand-fwd {
+@keyframes titleLoader {
   0% {
     letter-spacing: -0.5em;
     transform: translateZ(-800px);
@@ -635,10 +645,10 @@ hr {
   text-align: center;
   font-size: 50px;
   color: wheat;
-  animation: rotate-out-ver 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  animation: rotationSpinner 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
 }
 
-@keyframes rotate-out-ver {
+@keyframes rotationSpinner {
   0% {
     transform: rotateY(360deg);
     opacity: 1;
@@ -647,14 +657,6 @@ hr {
     transform: rotateY(0deg);
     opacity: 0;
     visibility: hidden;
-  }
-}
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-  }
-  20% {
-    transform: scaleY(1);
   }
 }
 /* Animation heart */
@@ -667,6 +669,7 @@ hr {
   background: radial-gradient(circle, #9356dc 0%, #ff79da 100%);
   transition: all 500ms;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -679,6 +682,7 @@ hr {
   background: radial-gradient(circle, #9356dc 0%, #ff79da 100%);
   transition: all 500ms;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   transition: all 0.3s linear 0s;
 }
