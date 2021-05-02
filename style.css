@@ -169,6 +169,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .restaurants__card .icon-restaurants {
   margin-right: 25px;
@@ -621,6 +622,7 @@ hr {
 }
 .loader {
   color: white;
+  font-family: "Shrikhand", cursive;
   animation: titleLoader 3s ease-in-out both;
 }
 
@@ -659,31 +661,20 @@ hr {
   }
 }
 /* Animation heart */
-.icon-restaurants i {
-  transition: all 200ms;
-}
-
-.icon-restaurants i:hover {
-  font-weight: bold;
-  background: radial-gradient(circle, #9356dc 0%, #ff79da 100%);
-  transition: all 500ms;
+.icon-restaurants__anim {
+  position: absolute;
+  font-size: x-large;
+  right: 25px;
+  bottom: 32px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  visibility: hidden;
 }
 
-.title__icon i {
-  transition: all 200ms;
-}
-
-.title__icon i:hover {
-  font-weight: bold;
-  background: radial-gradient(circle, #9356dc 0%, #ff79da 100%);
-  transition: all 500ms;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.3s linear 0s;
+.restaurants__card-content:hover .icon-restaurants__anim {
+  visibility: visible;
 }
 
 /* Animation slide card */

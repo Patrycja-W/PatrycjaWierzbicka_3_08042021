@@ -1,3 +1,4 @@
+@import 'variables';
 /* Animation bouton*/
 
 .introduction__btn:hover {
@@ -71,6 +72,7 @@
 
 .loader{
     color: white;
+    font-family: 'Shrikhand', cursive;
     animation: titleLoader 3s ease-in-out both;
 }
 @keyframes titleLoader {
@@ -112,31 +114,25 @@
   
 
 /* Animation heart */
-.icon-restaurants i {
-    transition: all 200ms;
+
+.icon-restaurants__anim{
+  position: absolute;
+  font-size: x-large;
+  right: 25px;
+  bottom: 32px;
+  background-image: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  visibility: hidden;
 }
 
-.icon-restaurants i:hover {
-    font-weight: bold;
-    background: radial-gradient(circle,rgba(147, 86, 220, 1) 0%,rgba(255, 121, 218, 1) 100%);
-    transition: all 500ms;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+.restaurants__card-content:hover .icon-restaurants__anim{
+ visibility: visible;
 }
 
-.title__icon i{
-    transition: all 200ms;
-}
- .title__icon i:hover{
-    font-weight: bold;
-    background: radial-gradient(circle,rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
-    transition: all 500ms;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: all 0.3s linear 0s;
- }
+
+
 
 /* Animation slide card */ 
 
