@@ -553,12 +553,12 @@ hr {
 /* Animation bouton*/
 .introduction__btn:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
-  background-image: linear-gradient(170deg, #ee81cf, #a469ec);
+  background: linear-gradient(170deg, #ee81cf, #a469ec);
 }
 
 .btn__commander:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
-  background-image: linear-gradient(170deg, #ee81cf, #a469ec);
+  background: linear-gradient(170deg, #ee81cf, #a469ec);
 }
 
 /* Animation apparition des menus*/
@@ -607,8 +607,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-animation: loaderPage 3s ease-out both;
-  animation: loaderPage 3s ease-out both;
+  animation: loaderPage 3s both;
 }
 
 @keyframes loaderPage {
@@ -622,13 +621,13 @@ hr {
 }
 .loader {
   color: white;
-  animation: titleLoader 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: titleLoader 3s ease-in-out both;
 }
 
 @keyframes titleLoader {
   0% {
     letter-spacing: -0.5em;
-    transform: translateZ(-800px);
+    transform: translateZ(-1000px);
     filter: blur(12px);
     opacity: 0;
   }
@@ -687,7 +686,7 @@ hr {
   transition: all 0.3s linear 0s;
 }
 
-/* Animation card */
+/* Animation slide card */
 .anim {
   position: absolute;
   right: -65px;
@@ -712,9 +711,12 @@ hr {
   transition: right 1s;
 }
 
-.card__menu-content:hover {
-  padding-right: 19%;
+.card__menu-content-price {
   transition: 1s;
+}
+
+.card__menu-content-price:hover {
+  transition: right 1s;
 }
 
 .iconicon {
@@ -738,6 +740,22 @@ hr {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media all and (min-width: 1100px) and (max-width: 2500px) {
+  .card__menu-content:hover {
+    padding-right: 10%;
+    transition: 1s;
+  }
+
+  .anim {
+    width: 9%;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 2500px) {
+  .card {
+    margin-bottom: 41px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
