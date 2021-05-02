@@ -156,19 +156,16 @@
  .card__menu-content{
   overflow: hidden;
  }
-.card__menu-content:hover .anim{
-    opacity: 1;
-    right: 0;
-    transition: right 1s;
-}
-
-
-.card__menu-content-price{
-  transition: 1s;
-}
-
-.card__menu-content-price:hover{
+ .card__menu-content:hover .anim{
+  opacity: 1;
+  right: 0;
   transition: right 1s;
+}
+
+.card__menu-content:hover{
+  padding-right: 100px;
+  padding-right: 19%;
+  transition: 1s;
 }
 
 

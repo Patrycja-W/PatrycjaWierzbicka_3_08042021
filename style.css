@@ -711,12 +711,10 @@ hr {
   transition: right 1s;
 }
 
-.card__menu-content-price {
+.card__menu-content:hover {
+  padding-right: 100px;
+  padding-right: 19%;
   transition: 1s;
-}
-
-.card__menu-content-price:hover {
-  transition: right 1s;
 }
 
 .iconicon {
