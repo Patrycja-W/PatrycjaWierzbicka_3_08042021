@@ -114,24 +114,58 @@
   
 
 /* Animation heart */
+.icon-restaurants {
+  color: black;
+  background-clip: text;
+  cursor: pointer;
+}
 
-.icon-restaurants__anim{
-  position: absolute;
-  font-size: x-large;
-  right: 25px;
-  bottom: 32px;
-  background-image: linear-gradient($color-primary, $color-secondary);
+.full_heart {
+  display: none;
+  transition: all .3s ease;
+}
+
+.icon-restaurants:hover .border_heart {
+  display: none;
+}
+
+.icon-restaurants:hover .full_heart {
+  display: block;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  visibility: hidden;
+  background-color: $color-secondary;
+  background-image: linear-gradient($color-primary 10%, $color-secondary 95%);
+  transition: all .3s ease;
+}
+/* animation heart menus */
+.title__icon {
+  color: black;
+  background-clip: text;
+  cursor: pointer;
+  font-size: 25px;
+    padding-left: 30px;
+    align-self: center;
 }
 
-.restaurants__card-content:hover .icon-restaurants__anim{
- visibility: visible;
+.full_heart {
+  display: none;
+  transition: all .3s ease;
 }
 
+.title__icon:hover .border_heart {
+  display: none;
+}
 
+.title__icon:hover .full_heart {
+  display: block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-color: $color-secondary;
+  background-image: linear-gradient($color-primary 10%, $color-secondary 95%);
+  transition: all .3s ease;
+}
 
 
 /* Animation slide card */ 

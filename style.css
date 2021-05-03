@@ -25,7 +25,7 @@ footer {
 }
 
 /* couleurs */
-.icon-nav, .icon-localisation, .icon-restaurants, .nav__icon {
+.icon-nav, .icon-localisation, .nav__icon {
   color: gray;
 }
 
@@ -414,15 +414,6 @@ hr {
   font-size: x-large;
 }
 
-.title__icon {
-  font-size: 20px;
-  margin-left: 30px;
-}
-
-.title__icon i {
-  color: black;
-}
-
 .cards {
   display: flex;
   flex-direction: column;
@@ -506,7 +497,7 @@ hr {
   }
 
   .title__icon {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .title {
@@ -661,20 +652,58 @@ hr {
   }
 }
 /* Animation heart */
-.icon-restaurants__anim {
-  position: absolute;
-  font-size: x-large;
-  right: 25px;
-  bottom: 32px;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+.icon-restaurants {
+  color: black;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.full_heart {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.icon-restaurants:hover .border_heart {
+  display: none;
+}
+
+.icon-restaurants:hover .full_heart {
+  display: block;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  visibility: hidden;
+  background-color: #FF79DA;
+  background-image: linear-gradient(#9356DC 10%, #FF79DA 95%);
+  transition: all 0.3s ease;
 }
 
-.restaurants__card-content:hover .icon-restaurants__anim {
-  visibility: visible;
+/* animation heart menus */
+.title__icon {
+  color: black;
+  background-clip: text;
+  cursor: pointer;
+  font-size: 25px;
+  padding-left: 30px;
+  align-self: center;
+}
+
+.full_heart {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.title__icon:hover .border_heart {
+  display: none;
+}
+
+.title__icon:hover .full_heart {
+  display: block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-color: #FF79DA;
+  background-image: linear-gradient(#9356DC 10%, #FF79DA 95%);
+  transition: all 0.3s ease;
 }
 
 /* Animation slide card */

@@ -27,7 +27,7 @@ footer {
 }
 
 /* couleurs */
-.icon-nav , .icon-localisation , .icon-restaurants , .nav__icon 
+.icon-nav , .icon-localisation , .nav__icon 
 {
     color: $color-icons;
 }
@@ -430,13 +430,7 @@ footer a
     
     }
 
-.title__icon{
-    font-size: 20px;
-    margin-left: 30px;
-}
-.title__icon i{
-    color: black
-  }
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -522,7 +516,7 @@ footer a
             margin-top: -38px;
         }
         .title__icon{
-            margin-left: 0;
+            padding-left: 0;
         }
         
         .title{
