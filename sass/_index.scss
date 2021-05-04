@@ -136,6 +136,7 @@ footer {
 .nav__link:hover{
     background-color: lighten($color: $color-primary , $amount: 30);
     box-shadow: 0 5px 10px -3px #7e7e7e;
+    transition: 500ms;
  }
  .nav__link:hover i {
      color: $color-primary ;
@@ -375,13 +376,19 @@ footer a
         padding-bottom: 35px;
     }
     .nav{     
-        padding:40px
+        align-self: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 90%;
+      
     }
     .nav__title-content{
-        display: flex
+        display: flex;
+        flex-flow: column;
     }
     .nav__link{
        background-color: #F2F2F2;
+       place-content: center;
     }
     .container-restaurants {
         padding-top: 0;

@@ -129,6 +129,7 @@ footer {
 .nav__link:hover {
   background-color: #e4d5f6;
   box-shadow: 0 5px 10px -3px #7e7e7e;
+  transition: 500ms;
 }
 
 .nav__link:hover i {
@@ -359,15 +360,20 @@ footer a {
   }
 
   .nav {
-    padding: 40px;
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 90%;
   }
 
   .nav__title-content {
     display: flex;
+    flex-flow: column;
   }
 
   .nav__link {
     background-color: #F2F2F2;
+    place-content: center;
   }
 
   .container-restaurants {
@@ -546,11 +552,13 @@ hr {
 .introduction__btn:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
   background: linear-gradient(170deg, #ee81cf, #a469ec);
+  transition: 500ms;
 }
 
 .btn__commander:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
   background: linear-gradient(170deg, #ee81cf, #a469ec);
+  transition: 500ms;
 }
 
 /* Animation apparition des menus*/
@@ -654,7 +662,6 @@ hr {
 /* Animation heart */
 .icon-restaurants {
   color: black;
-  background-clip: text;
   cursor: pointer;
 }
 

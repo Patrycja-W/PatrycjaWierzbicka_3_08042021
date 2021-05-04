@@ -4,10 +4,12 @@
 .introduction__btn:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
   background: linear-gradient(170deg, #ee81cf, #a469ec);
+  transition: 500ms;
   }
 .btn__commander:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
   background: linear-gradient(170deg, #ee81cf, #a469ec);
+  transition: 500ms;
 
 }
 /* Animation apparition des menus*/ 
@@ -116,7 +118,7 @@
 /* Animation heart */
 .icon-restaurants {
   color: black;
-  background-clip: text;
+  //background-clip: text;
   cursor: pointer;
 }
 
