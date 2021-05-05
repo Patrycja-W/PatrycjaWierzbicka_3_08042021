@@ -99,7 +99,7 @@
     text-align: center;
     font-size: 50px;
     color: wheat;
-    animation: rotationSpinner 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+    animation: rotationSpinner 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
   @keyframes rotationSpinner {
     0% {
@@ -124,7 +124,6 @@
 
 .full_heart {
   display: none;
-  transition: all .3s ease;
 }
 
 .icon-restaurants:hover .border_heart {
@@ -136,23 +135,21 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-color: $color-secondary;
   background-image: linear-gradient($color-primary 10%, $color-secondary 95%);
-  transition: all .3s ease;
+  animation-name: getfat;
+  animation-duration: 1s;
 }
 /* animation heart menus */
 .title__icon {
   color: black;
-  background-clip: text;
   cursor: pointer;
   font-size: 25px;
-    padding-left: 30px;
-    align-self: center;
+  padding-left: 30px;
+  align-self: center;
 }
 
 .full_heart {
   display: none;
-  transition: all .3s ease;
 }
 
 .title__icon:hover .border_heart {
@@ -164,9 +161,21 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-color: $color-secondary;
   background-image: linear-gradient($color-primary 10%, $color-secondary 95%);
-  transition: all .3s ease;
+  animation-name: getfat;
+  animation-duration: 1s;
+  
+}
+
+ // keyframe pour faire grossir//
+@keyframes getfat {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
 }
 
 
