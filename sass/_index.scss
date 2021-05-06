@@ -268,6 +268,7 @@ footer a
         list-style-type: none;
         text-decoration: none;
         color: white; 
+        cursor: pointer;
     }
     
 }
@@ -431,7 +432,7 @@ footer a
     justify-content: center;
 
 }
-.title a {
+.title h1 {
     font-family: 'Shrikhand', cursive;
     font-size: x-large;
     

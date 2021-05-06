@@ -3,12 +3,12 @@
 
 .introduction__btn:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
-  background: linear-gradient(170deg, #ee81cf, #a469ec);
+  background: linear-gradient(170deg, $color-secondary-light, $color-primary-light);
   transition: 500ms;
   }
 .btn__commander:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
-  background: linear-gradient(170deg, #ee81cf, #a469ec);
+  background: linear-gradient(170deg, $color-secondary-light, $color-primary-light);
   transition: 500ms;
 
 }
@@ -196,17 +196,17 @@
 }
  .card__menu-content{
   overflow: hidden;
+  transition: 1s;
  }
  .card__menu-content:hover .anim{
   opacity: 1;
   right: 0;
-  transition: right 1s;
 }
 
 .card__menu-content:hover{
   padding-right: 100px;
   padding-right: 19%;
-  transition: 1s;
+
 }
 
 
@@ -236,7 +236,6 @@
 @media all and (min-width: 1100px) and (max-width: 2500px) {
   .card__menu-content:hover {
     padding-right: 10%;
-    transition: 1s;
   }
 
     .anim{
