@@ -22,10 +22,18 @@ footer {
     width: auto;
 }
 
-/* couleurs */
+/* icones */
 .icon-nav , .icon-localisation , .nav__icon 
 {
     color: $color-icons;
+}
+.icon-heart{
+    margin-right: 25px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: black;
+    cursor: pointer;
+    
 }
 
 /* PAGE D'ACCUEIL */ 
@@ -182,14 +190,7 @@ footer {
 
         }
 
-        .icon-restaurants{
-            margin-right: 25px;
-            margin-bottom: 10px;
-            font-size: x-large;
-            color: black;
-  cursor: pointer;
-            
-        }
+        
         p{
             font-size: 15px;
             padding-left: 20px;
@@ -428,6 +429,7 @@ footer a
     border-bottom: 1px black solid;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &__icon {
         color: black;
@@ -441,6 +443,7 @@ footer a
 .title h1 {
     font-family: 'Shrikhand', cursive;
     font-size: x-large;
+    padding-right: 30px
     
     }
 

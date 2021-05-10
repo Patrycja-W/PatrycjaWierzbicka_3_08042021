@@ -19,9 +19,17 @@ footer {
   width: auto;
 }
 
-/* couleurs */
+/* icones */
 .icon-nav, .icon-localisation, .nav__icon {
   color: gray;
+}
+
+.icon-heart {
+  margin-right: 25px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  color: black;
+  cursor: pointer;
 }
 
 /* PAGE D'ACCUEIL */
@@ -168,13 +176,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-.restaurants__card .icon-restaurants {
-  margin-right: 25px;
-  margin-bottom: 10px;
-  font-size: x-large;
-  color: black;
-  cursor: pointer;
 }
 .restaurants__card p {
   font-size: 15px;
@@ -409,6 +410,7 @@ hr {
   border-bottom: 1px black solid;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .title__icon {
   color: black;
@@ -421,6 +423,7 @@ hr {
 .title h1 {
   font-family: "Shrikhand", cursive;
   font-size: x-large;
+  padding-right: 30px;
 }
 
 .cards {
@@ -662,12 +665,12 @@ hr {
     visibility: hidden;
   }
 }
-/* Animation heart page d'accueil */
+/* Animation heart */
 .full_heart {
   display: none;
 }
 
-.icon-restaurants:hover .full_heart {
+.icon-heart:hover .full_heart {
   display: block;
   background-clip: text;
   -webkit-background-clip: text;
@@ -676,25 +679,7 @@ hr {
   animation: getfat 1s;
 }
 
-.icon-restaurants:hover .border_heart {
-  display: none;
-}
-
-/* animation heart menus */
-.full_heart {
-  display: none;
-}
-
-.title__icon:hover .full_heart {
-  display: block;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(#9356DC 10%, #FF79DA 95%);
-  animation: getfat 1s;
-}
-
-.title__icon:hover .border_heart {
+.icon-heart:hover .border_heart {
   display: none;
 }
 

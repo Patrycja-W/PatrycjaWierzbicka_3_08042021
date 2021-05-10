@@ -108,13 +108,13 @@
   }
   
 
-/* Animation heart page d'accueil */
+/* Animation heart */
 
 .full_heart {
   display: none;
 }
 
-.icon-restaurants:hover .full_heart {
+.icon-heart:hover .full_heart {
   display: block;
   background-clip: text;
   -webkit-background-clip: text;
@@ -123,25 +123,7 @@
   animation: getfat 1s;
 }
 
-.icon-restaurants:hover .border_heart {
-  display: none;
-}
-/* animation heart menus */
-
-.full_heart {
-  display: none;
-}
-
-.title__icon:hover .full_heart {
-  display: block;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient($color-primary 10%, $color-secondary 95%);
-  animation: getfat 1s;
-}
-
-.title__icon:hover .border_heart {
+.icon-heart:hover .border_heart {
   display: none;
 }
 
