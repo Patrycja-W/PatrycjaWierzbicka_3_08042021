@@ -11,11 +11,6 @@ header {
   margin: auto;
 }
 
-main {
-  width: 70%;
-  margin: auto;
-}
-
 footer {
   display: flex;
   justify-content: space-around;
@@ -151,7 +146,9 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
 }
 .restaurants__card {
   background-color: white;
@@ -176,6 +173,8 @@ footer {
   margin-right: 25px;
   margin-bottom: 10px;
   font-size: x-large;
+  color: black;
+  cursor: pointer;
 }
 .restaurants__card p {
   font-size: 15px;
@@ -376,10 +375,6 @@ footer a {
     background-color: #F2F2F2;
     place-content: center;
   }
-
-  .container-restaurants {
-    padding-top: 0;
-  }
 }
 /* Menu 1 */
 .logo-ohmyfood {
@@ -414,6 +409,13 @@ hr {
   border-bottom: 1px black solid;
   display: flex;
   justify-content: center;
+}
+.title__icon {
+  color: black;
+  cursor: pointer;
+  font-size: 25px;
+  padding-left: 30px;
+  align-self: center;
 }
 
 .title h1 {
@@ -550,6 +552,11 @@ hr {
     padding-top: 50px;
   }
 }
+@media all and (min-width: 920px) and (max-width: 1139px) {
+  .restaurants__card {
+    width: 390px;
+  }
+}
 /* Animation bouton*/
 .introduction__btn:hover {
   box-shadow: 0 7px 10px -3px #7e7e7e;
@@ -565,27 +572,23 @@ hr {
 
 /* Animation apparition des menus*/
 .card__menu-content:nth-child(1) {
-  animation: apparition 1s linear backwards;
+  animation: apparition 1s linear both;
 }
 
 .card__menu-content:nth-child(2) {
-  animation: apparition 1s 0.3s linear backwards;
+  animation: apparition 1s 0.3s linear both;
 }
 
 .card__menu-content:nth-child(3) {
-  animation: apparition 1s 0.6s linear backwards;
+  animation: apparition 1s 0.6s linear both;
 }
 
 .card__menu-content:nth-child(4) {
-  animation: apparition 1s 0.9s linear backwards;
+  animation: apparition 1s 0.9s linear both;
 }
 
 @keyframes apparition {
   0% {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  40% {
     opacity: 0;
     transform: translateY(25px);
   }
@@ -603,8 +606,8 @@ hr {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  z-index: 1;
   position: fixed;
-  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -624,24 +627,22 @@ hr {
 .loader {
   color: white;
   font-family: "Shrikhand", cursive;
-  animation: titleLoader 3s ease-in-out both;
+  animation: titleLoader 3s linear both;
 }
 
 @keyframes titleLoader {
   0% {
-    letter-spacing: -0.5em;
-    transform: translateZ(-1000px);
-    filter: blur(12px);
+    letter-spacing: 20px;
+    transform: translateZ(-20px);
     opacity: 0;
   }
   100% {
     transform: translateZ(0);
-    filter: blur(0);
     opacity: 1;
   }
 }
 .spinner i {
-  margin: 100px auto;
+  margin: 30px;
   width: 50px;
   height: 40px;
   text-align: center;
@@ -661,17 +662,8 @@ hr {
     visibility: hidden;
   }
 }
-/* Animation heart */
-.icon-restaurants {
-  color: black;
-  cursor: pointer;
-}
-
+/* Animation heart page d'accueil */
 .full_heart {
-  display: none;
-}
-
-.icon-restaurants:hover .border_heart {
   display: none;
 }
 
@@ -681,24 +673,15 @@ hr {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(#9356DC 10%, #FF79DA 95%);
-  animation-name: getfat;
-  animation-duration: 1s;
+  animation: getfat 1s;
 }
 
-/* animation heart menus */
-.title__icon {
-  color: black;
-  cursor: pointer;
-  font-size: 25px;
-  padding-left: 30px;
-  align-self: center;
-}
-
-.full_heart {
+.icon-restaurants:hover .border_heart {
   display: none;
 }
 
-.title__icon:hover .border_heart {
+/* animation heart menus */
+.full_heart {
   display: none;
 }
 
@@ -708,8 +691,11 @@ hr {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(#9356DC 10%, #FF79DA 95%);
-  animation-name: getfat;
-  animation-duration: 1s;
+  animation: getfat 1s;
+}
+
+.title__icon:hover .border_heart {
+  display: none;
 }
 
 @keyframes getfat {
@@ -731,11 +717,6 @@ hr {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: 1s;
-  overflow: hidden;
-}
-
-.card__menu-content {
   overflow: hidden;
   transition: 1s;
 }
@@ -745,15 +726,19 @@ hr {
   right: 0;
 }
 
+.card__menu-content {
+  overflow: hidden;
+  transition: 1s;
+}
+
 .card__menu-content:hover {
-  padding-right: 100px;
   padding-right: 19%;
 }
 
 .iconicon {
   font-size: 20px;
   color: white;
-  transition: all 1s ease-in-out;
+  transition: 1s ease-in-out;
   transform: rotate(0deg);
 }
 

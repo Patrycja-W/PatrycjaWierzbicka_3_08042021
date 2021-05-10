@@ -13,11 +13,7 @@ header {
     margin: auto;
   
 }
- main {
-    width: 70%;
-  margin: auto;
 
-}
 footer {
     display: flex;
     justify-content: space-around;
@@ -159,7 +155,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
 
 
  
@@ -188,6 +186,8 @@ footer {
             margin-right: 25px;
             margin-bottom: 10px;
             font-size: x-large;
+            color: black;
+  cursor: pointer;
             
         }
         p{
@@ -391,9 +391,7 @@ footer a
        background-color: #F2F2F2;
        place-content: center;
     }
-    .container-restaurants {
-        padding-top: 0;
-}
+
 
 
 }
@@ -430,6 +428,14 @@ footer a
     border-bottom: 1px black solid;
     display: flex;
     justify-content: center;
+
+    &__icon {
+        color: black;
+        cursor: pointer;
+        font-size: 25px;
+        padding-left: 30px;
+        align-self: center;
+      }
 
 }
 .title h1 {
@@ -571,4 +577,10 @@ footer a
             padding-bottom: 70px;
             padding-top: 50px;
             }
+}
+
+@media all and (min-width: 920px) and (max-width: 1139px) {
+    .restaurants__card{
+        width: 390px;
+    }
 }
