@@ -15,11 +15,7 @@ header {
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    background-color: $color-footer;
-    width: auto;
+    @include footer;
 }
 
 /* icones */
